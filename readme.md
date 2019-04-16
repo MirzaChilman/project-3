@@ -1,4 +1,4 @@
-#How to Run
+# How to Run
 
 `npm install local-web-server` navigate to your project files (where index.html is located) then type `ws` to run the project
 
