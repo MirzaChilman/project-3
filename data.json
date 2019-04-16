@@ -1,0 +1,40 @@
+{
+  "movie":[
+    {
+      "img": "assets/movie1.jpeg",
+      "title": "MOVIE 1",
+      "time": "06PM - 07.30PM",
+      "place": "East Side"
+    },
+    {
+      "img": "assets/movie2.jpg",
+      "title": "MOVIE 2",
+      "time": "06PM - 07.30PM",
+      "place": "East Side"
+    },
+    {
+      "img": "assets/movie3.jpg",
+      "title": "MOVIE 3",
+      "time": "06PM - 07.30PM",
+      "place": "East Side"
+    },
+    {
+      "img": "assets/avengers.jpg",
+      "title": "MOVIE 2",
+      "time": "06PM - 07.30PM",
+      "place": "East Side"
+    },
+    {
+      "img": "assets/avengers.png",
+      "title": "MOVIE 2",
+      "time": "06PM - 07.30PM",
+      "place": "East Side"
+    },
+    {
+      "img": "assets/avengers.jpg",
+      "title": "MOVIE 2",
+      "time": "06PM - 07.30PM",
+      "place": "East Side"
+    }
+  ]
+}

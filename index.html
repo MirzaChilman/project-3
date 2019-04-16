@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: #eee;
+      }
+
+      .card-custom {
+        border: 1px solid lightgray;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        background-color: white;
+        -webkit-box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.1);
+        padding: 20px 20px;
+      }
+
+      .banner {
+        background-image: url("./assets/imageBanner.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+      }
+      .text-white {
+        color: black !important;
+      }
+
+      .text-banner {
+        height: 400px;
+      }
+      .text-banner--container {
+        width: 650px;
+        background-color: rgb(240, 240, 245);
+        padding: 20px 40px;
+      }
+
+      .footer{
+        color:white;
+      }
+      
+      .soc-med{
+        display: flex;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid banner">
+      <div class="row text-banner">
+        <div class="col text-white my-auto ml-5">
+          <div class="text-banner--container">
+            <h1>Brooklyn Outdoor Film Festival</h1>
+            <h4>
+              <strong>August 5th to 8th</strong> at
+              <strong>Brooklyn Bridge Park</strong>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Main Container -->
+        <div class="col-12 p-2">
+          <!--About us Container-->
+          <!--          <div class="container">-->
+          <!--            <div class="row">-->
+          <!--              <div class="col">-->
+          <!--                <h1>About Us</h1>-->
+          <!--                <div class="row">-->
+          <!--                  <div class="col">-->
+          <!--                    <div class="card-custom">-->
+          <!--                      <p>-->
+          <!--                        From the creator of <strong>Brooklyn Vibes Events Co.</strong>-->
+          <!--                      </p>-->
+          <!--                    </div>-->
+          <!--                  </div>-->
+          <!--                </div>-->
+          <!--              </div>-->
+          <!--            </div>-->
+          <!--          </div>-->
+          <!-- End of About us Container -->
+
+          <!-- Information Container -->
+          <div class="container mb-4">
+            <div class="row">
+              <div class="col">
+                <h1>Information</h1>
+                <div class="row">
+                  <div class="col">
+                    <div class="card-custom">
+                      <div>
+                        <h3>PRICE</h3>
+                        <p>All shown and free to everyone</p>
+                      </div>
+                      <div>
+                        <h3>WHAT TO BRING</h3>
+                        <p>
+                          Since this is an open space, organizer does not
+                          provide you with any kind of convenient support, you
+                          are more than welcome to bring snack, camping chair,
+                          blanket pillows. Other thing you should consider to
+                          bring:
+                        </p>
+                        <ol>
+                          <li>
+                            Girlfriend/Boyfriend (if you have one of course)
+                          </li>
+                          <li>
+                            Family (Best to enjoy the movie with your family)
+                          </li>
+                          <li>
+                            Credit Card/Cash (there will be lots of snack and
+                            merchandise that you can buy)
+                          </li>
+                          <li>Beer!</li>
+                        </ol>
+                      </div>
+                      <p class="small">
+                        NB : please bring your own medicine in case something
+                        happen, the vendor will also provide medical support
+                        when needed
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of Information Container -->
+
+          <!-- Schedule Container -->
+          <div class="container mb-4">
+            <div class="row">
+              <div class="col">
+                <h1>Schedule</h1>
+                <div class="row">
+                  <div class="col">
+                    <div class="card-custom">
+                      <div class="card-group" id="movie-list"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Of Schedule Container -->
+
+          <!-- Find Us Container -->
+          <div class="container mb-4">
+            <div class="row">
+              <div class="col">
+                <h1>Find Us</h1>
+                <div class="well">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.7501877717855!2d-73.99558370331944!3d40.70149914710644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a46a369a18d%3A0xa109779d5185c305!2sBrooklyn+Bridge+Park!5e0!3m2!1sen!2sdk!4v1499982247454"
+                    frameborder="0"
+                    style="width: 100%; height: 350px; border:0"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of Find Us Container -->
+        </div>
+        <!-- End of Main Container -->
+
+        <!-- Side Container -->
+<!--        <div class="offset-1 col-3" style="background-color: yellow">-->
+<!--          <h1>Latest News</h1>-->
+<!--        </div>-->
+      </div>
+      <!--End of Container Fluid-->
+    </div>
+    <div class="container-fluid" style="background-color: darkslategrey">
+      <div class="row">
+        <div class="col">
+          <div class="footer ml-5 mt-3">
+            <h3>Follow Us on:</h3>
+            <article class="soc-med">
+              <p>21312321</p>
+              <p>21312321</p>
+              <p>21312321</p>
+              <p>21312321</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      window.onload = (function() {
+        const movieList = document.getElementById("movie-list");
+        fetch("./data.json")
+          .then(res => res.json())
+          .then(data => data.movie.map(datum => {
+
+
+            const nodeDivCard = document.createElement("div");
+            nodeDivCard.setAttribute("class", "card mb-3");
+
+            const nodeImgCard = document.createElement("img");
+            nodeImgCard.setAttribute("class", "card-img-top");
+            nodeImgCard.setAttribute('src',datum.img);
+
+            const nodeCardBody = document.createElement("div");
+            nodeCardBody.setAttribute("class", "card-body");
+
+            const nodeCardTitle = document.createElement("h5");
+            nodeCardTitle.setAttribute("class", "card-title");
+            const title = document.createTextNode(datum.title)
+            nodeCardTitle.appendChild(title)
+
+            const nodeCardText = document.createElement("p");
+            nodeCardText.setAttribute("class", "card-text");
+            const text = document.createTextNode(`Place: ${datum.place}`);
+            nodeCardText.appendChild(text)
+
+            const nodeCardTextSmall = document.createElement("p");
+            nodeCardTextSmall.setAttribute("class", "card-text");
+
+            const nodeSmall = document.createElement("small");
+            nodeSmall.setAttribute("class", "text-muted");
+            const smallText = document.createTextNode('Place:' + datum.place + '\n')
+            const smallText2 = document.createTextNode('\n' + 'Time:' + datum.time)
+            nodeSmall.appendChild(smallText)
+            nodeSmall.appendChild(smallText2)
+            nodeCardTextSmall.appendChild(nodeSmall)
+
+
+            const nodeCol = document.createElement("div")
+            nodeCol.setAttribute("class", "col-md-4")
+
+            nodeCol.appendChild(nodeDivCard);
+            nodeCardBody.appendChild(nodeCardTitle)
+            nodeCardBody.appendChild(nodeCardText)
+            nodeCardBody.appendChild(nodeCardTextSmall)
+
+            nodeDivCard.appendChild(nodeImgCard)
+            nodeDivCard.appendChild(nodeCardBody)
+            nodeCol.appendChild(nodeDivCard)
+            movieList.appendChild(nodeCol)
+
+            return movieList
+          }));
+
+      })();
+    </script>
+  </body>
+</html>
+
+<!--<div class="card">-->
+<!--  <img-->
+<!--          class="card-img-top"-->
+<!--          src="..."-->
+<!--          alt="Card image cap"-->
+<!--  />-->
+<!--  <div class="card-body">-->
+<!--    <h5 class="card-title">Card title</h5>-->
+<!--    <p class="card-text">-->
+<!--      This is a wider card with supporting text below as-->
+<!--      a natural lead-in to additional content. This card-->
+<!--      has even longer content than the first to show-->
+<!--      that equal height action.-->
+<!--    </p>-->
+<!--    <p class="card-text">-->
+<!--      <small class="text-muted"-->
+<!--      >Last updated 3 mins ago</small-->
+<!--      >-->
+<!--    </p>-->
+<!--  </div>-->
+<!--</div>-->
